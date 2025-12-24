@@ -18,7 +18,7 @@ img {
     span {
         font-size: 20px;
         font-weight: 700;
-        color: white;
+        color: gray;
     }
 
     h1 {
@@ -52,12 +52,13 @@ img {
         font-weight: 300;
 
         b {
-            font-size: 72px;
+            font-size: 50px;
             background: -webkit-linear-gradient(180deg, #eee, #333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-style: normal;
         }
+
     }
     }
 
@@ -71,3 +72,10 @@ img {
     .benefit-section {
         flex-direction: row;
     }
+
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
