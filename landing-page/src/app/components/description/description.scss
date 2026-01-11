@@ -1,0 +1,14 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+}
+
+@media (min-width: 1080px) {
+    .text {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}

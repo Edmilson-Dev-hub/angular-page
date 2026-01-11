@@ -6,6 +6,10 @@ main {
 
 img {
     border-radius: 10px;
+    background-color: #deb79d;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
 }
 
 .main-section {
@@ -19,12 +23,14 @@ img {
         font-size: 20px;
         font-weight: 700;
         color: gray;
+        text-align: center;
     }
 
     h1 {
         font-size: 72px;
         font-weight: 900;
         color: white;
+        text-align: center;
     }
 }
 
@@ -56,7 +62,6 @@ img {
             background: -webkit-linear-gradient(180deg, #eee, #333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-style: normal;
         }
 
     }
@@ -78,4 +83,63 @@ img {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.collection h2 {
+  margin-bottom: 40px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.collection-grid img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.collection-grid img:hover {
+  transform: scale(1.05);
+}
+
+.manifesto {
+  text-align: center;
+  background: #111;
+}
+
+.manifesto h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.manifesto p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
 }
