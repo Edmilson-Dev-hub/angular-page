@@ -2,16 +2,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: transparent;
 }
 
 .logo {
-    margin-top: 20px;
-    width: 100px;
-    height: 50px; // Adjusted for better aspect ratio
+    width: 80px;
+    height: 40px;
     background-color: white;
     mask-image: url('/assets/nike-logo.svg');
-    -webkit-mask-image: url('/assets/nike-logo.svg'); // For browser compatibility
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    -webkit-mask-image: url('/assets/nike-logo.svg');
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
