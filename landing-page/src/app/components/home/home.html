@@ -14,14 +14,17 @@
             <div class="image">
                 <a href="https://www.nike.com/t/air-max-95-mens-shoes-QnmPopqO/IB6830-002">
                 <div class="image-container">
-                    <img src="/assets/NIKE+AIR+MAX+95+BIG+BUBBLE+SE.png" width="500" height="500" alt="Nike Air Max 95" class="hero-shoe">
-            </div>
+                    <img [src]="heroShoeImage" width="500" height="500" alt="Nike Air Max 95" class="hero-shoe">
+                </div>
                 </a>
-            <div class="dots-container">
-                <span class="dot active" onclick="changeImage('/assets/NIKE+AIR+MAX+95+BIG+BUBBLE+SE.png', this)"></span>
-                <span class="dot" onclick="chanceImage('/assets/BigBuble2.png', this)"></span>
-                <span class="dot" onclick="chanceImage('/assets/BigBuble3.png', this)"></span>
-            </div>
+                <div class="dots-container">
+                    <span
+                      *ngFor="let dot of dots"
+                      class="dot"
+                      [class.active]="dot.active"
+                      (click)="changeImage(dot)">
+                    </span>
+                </div>
 
             </div>
         </div>
@@ -74,18 +77,3 @@
 
 
 </main>
-
-<script> 
-    function changeImage(imageUrl, dotElement) {
-    // 1. Muda a imagem principal
-    document.getElementById('currentImage').src = /assets/NIKE+AIR+MAX+95+BIG+BUBBLE+SE.png;
-
-    // 2. Remove a classe 'active' de todas as bolinhas
-    let dots = document.querySelectorAll('.dot');
-    dots.forEach(dot => dot.classList.remove('active'));
-
-    // 3. Adiciona a classe 'active' à bolinha clicada/passada o mouse
-    dotElement.classList.add('active');
-    }
-
-</script>
