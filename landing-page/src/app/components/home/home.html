@@ -22,10 +22,9 @@
                       *ngFor="let dot of dots"
                       class="dot"
                       [class.active]="dot.active"
-                      (click)="changeImage(dot)">
+                      (mouseover)="changeImage(dot)">
                     </span>
                 </div>
-
             </div>
         </div>
         </section>
@@ -40,6 +39,14 @@
                     <p>Big Kids Shoes</p>
                     <h3>$147</h3>
             </div>
+            <div class="dots-container-small">
+                <span
+                    *ngFor="let dot of dots"
+                    class="dot"
+                    [class.active]="dot.active"
+                    (mouseover)="changeImage(dot)">
+                </span>
+            </div>
         </a>
 
             <a href="https://www.nike.com/t/air-max-95-big-bubble-womens-shoes-C8qkmu3G/IQ0277-010">
@@ -48,6 +55,14 @@
                 <h3>Nike Air Max 95 Big Bubble</h3>
                 <p>Women's Shoes</p>
                 <h3>$200</h3>
+            </div>
+            <div class="dots-container-small">
+                <span
+                    *ngFor="let dot of dots"
+                    class="dot"
+                    [class.active]="dot.active"
+                    (mouseover)="changeImage(dot)">
+                </span>
             </div>
             </a>
 
@@ -58,6 +73,14 @@
                 <p>Women's Shoes</p>
                 <h3>$150</h3>
             </div>
+            <div class="dots-container-small">
+                <span
+                    *ngFor="let dot of dots"
+                    class="dot"
+                    [class.active]="dot.active"
+                    (mouseover)="changeImage(dot)">
+                </span>
+            </div>   
             </a>
         </div>
 

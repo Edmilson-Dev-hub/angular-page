@@ -176,6 +176,18 @@ main {
     margin-top: 10px;
 }
 
+.dot-container-small {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: trasnlateX(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+}
+
 .dot {
     height: 12px;
     width: 12px;
@@ -331,6 +343,11 @@ main {
 
 .collection-grid img:hover {
   transform: scale(1.05);
+}
+
+.collection-grid a {
+    position: relative;
+    display: block;
 }
 
 .manifesto {
