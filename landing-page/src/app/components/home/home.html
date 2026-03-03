@@ -13,16 +13,16 @@
 
             <div class="image">
                 <a href="https://www.nike.com/t/air-max-95-mens-shoes-QnmPopqO/IB6830-002">
-                <div class="image-container">
-                    <img [src]="heroShoeImage" width="500" height="500" alt="Nike Air Max 95" class="hero-shoe">
-                </div>
+                    <div class="image-container">
+                        <img [src]="heroShoeImage" width="500" height="500" alt="Nike Air Max 95" class="hero-shoe">
+                    </div>
                 </a>
                 <div class="dots-container">
                     <span
                       *ngFor="let dot of dots"
                       class="dot"
                       [class.active]="dot.active"
-                      (mouseover)="changeImage(dot)">
+                      (click)="changeImage(dot); $event.stopPropagation()">
                     </span>
                 </div>
             </div>
@@ -39,14 +39,6 @@
                     <p>Big Kids Shoes</p>
                     <h3>$147</h3>
             </div>
-            <div class="dots-container-small">
-                <span
-                    *ngFor="let dot of dots"
-                    class="dot"
-                    [class.active]="dot.active"
-                    (mouseover)="changeImage(dot)">
-                </span>
-            </div>
         </a>
 
             <a href="https://www.nike.com/t/air-max-95-big-bubble-womens-shoes-C8qkmu3G/IQ0277-010">
@@ -55,14 +47,6 @@
                 <h3>Nike Air Max 95 Big Bubble</h3>
                 <p>Women's Shoes</p>
                 <h3>$200</h3>
-            </div>
-            <div class="dots-container-small">
-                <span
-                    *ngFor="let dot of dots"
-                    class="dot"
-                    [class.active]="dot.active"
-                    (mouseover)="changeImage(dot)">
-                </span>
             </div>
             </a>
 
@@ -73,14 +57,6 @@
                 <p>Women's Shoes</p>
                 <h3>$150</h3>
             </div>
-            <div class="dots-container-small">
-                <span
-                    *ngFor="let dot of dots"
-                    class="dot"
-                    [class.active]="dot.active"
-                    (mouseover)="changeImage(dot)">
-                </span>
-            </div>   
             </a>
         </div>
 
