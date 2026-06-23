@@ -1,0 +1,10 @@
+{
+  "buildCommand": "cd landing-page && npm install && npm run build",
+  "outputDirectory": "landing-page/dist/landing-page/browser",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
