@@ -13,12 +13,12 @@ import {Description } from '../description/description';
   styleUrl: './home.scss',
 })
 export class Home {
-  heroShoeImage: string = '/assets/NIKE+AIR+MAX+95+BIG+BUBBLE+SE.png';
+  heroShoeImage: string = 'assets/NIKE+AIR+MAX+95+BIG+BUBBLE+SE.png';
 
   dots = [
-    { src: '/assets/NIKE+AIR+MAX+95+BIG+BUBBLE+SE.png', active: true },
-    { src: '/assets/BigBuble2.png', active: false },
-    { src: '/assets/BigBuble3.png', active: false }
+    { src: 'assets/NIKE+AIR+MAX+95+BIG+BUBBLE+SE.png', active: true },
+    { src: 'assets/BigBuble2.png', active: false },
+    { src: 'assets/BigBuble3.png', active: false }
   ];
 
   changeImage(selectedDot: any) {
